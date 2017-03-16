@@ -31,9 +31,7 @@
     displayAnimal($animal->getAnimal());
     
     function displayAnimal($animalInfo) {
-        $animalArray = (array)$animalInfo;
-        
-        foreach($animalArray as $key => $val) {
+        foreach($animalInfo as $key => $val) {
             echo $key . " = " . $val . "<br />";
         }
         
